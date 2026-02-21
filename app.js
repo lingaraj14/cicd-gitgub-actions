@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
   res.send("Hello world!");
 });
 
-app.get("/user_details", (req, res) => {
+app.get("/api/user_details", (req, res) => {
   res.send({
     id: 1,
     name: "John Doh",
