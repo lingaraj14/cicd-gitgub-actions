@@ -6,6 +6,14 @@ app.get("/", (req, res) => {
   res.send("Hello world!");
 });
 
+app.get("/user_details", (req, res) => {
+  res.send({
+    id: 1,
+    name: "John Doh",
+    age: 35,
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`App is running on ${PORT}`);
 });
